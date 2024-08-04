@@ -35,8 +35,6 @@ $$   \hat{h}(n+1)=\hat{h}(n)+ \frac{\mu e^{\star}(n)x(n)}{x^H(n)x(n)} $$
 
 ## Noise Removal from Voice Signal
 
-### Matlab Implementation
----
 
 On matlab we implement LMS and NLMS algorithms.
 
