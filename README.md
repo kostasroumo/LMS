@@ -44,3 +44,24 @@ $$ x=d + n  $$
 On matlab we implement LMS and NLMS algorithms.
 
 After that we use the  filters to remove noise with different $\mu$.
+
+## Hardware Implementation
+
+We try to implement this online filter on hardware,System Verilog for a possible FPGA problem.
+For example we will input on FPGA a  real-time noisy signal and it will output the denoised.
+
+But on this case we implement LMS filter and we test it on sine waves.
+
+### Sine generators
+---
+More detail, we created python code that generates three  sine waves , $2MHz$  $30MHz$ , sum of $2,30$ and output the waves as .txt files.
+
+### System verilog 
+---
+
+- _lms_fir.sv_: Implementatio of LMS filter.
+
+- _lut_example.sv_: Reads .txt files as LUT's.
+  
+-  _tb_lut_example.sv_: Testebench for generating sine waves and applying LMS filter.
+
