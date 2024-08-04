@@ -54,14 +54,14 @@ But on this case we implement LMS filter and we test it on sine waves.
 
 ### Sine generators
 ---
-More detail, we created python code that generates three  sine waves , $2MHz$  $30MHz$ , sum of $2,30$ and output the waves as .txt files.
+More detail, we created python code that generates three  sine waves , 2MHz, 30MHz, sum of 2MHz and 30MHz and outputs the waves as .txt files.
 
 ### System verilog 
 ---
 
-- _lms_fir.sv_: Implementatio of LMS filter.
+- _lms_fir.sv_: Implementation of LMS filter.
 
-- _lut_example.sv_: Reads .txt files as LUT's.
+- _lut_example.sv_: Reading .txt files as LUT's.
   
 -  _tb_lut_example.sv_: Testebench for generating sine waves and applying LMS filter.
 
