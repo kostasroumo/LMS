@@ -21,13 +21,27 @@ This is an online version of Wiener FIR Filter.
    - **Filter Output:** $\hat{y}(n)=\hat{h}^H(n)x(n)=\sum_{i=0}^{p-1}\hat{h}_i(n)x(n-i)$
    - **Error Signal:** $e(n)=d(n)-\hat{y}(n)$
    - **Update Vector:** $\hat{h}(n+1)=\hat{h}(n)+μ e^{\star}(n)x(n)$
-     - **$\mu$:** Ρυθμός μάθησης.
+     - **$\mu$:** learning rate.
      - $e^{\star}(n)=e(n)$ for signals with real coefficients.
 
 ---
 
 
-## NLMS Algorithm
+## NormalizeLMS Algorithm
 Ιt is exactly the same algorithm with the only difference that the weights are renewed based on the following formula:
 
 $$   \hat{h}(n+1)=\hat{h}(n)+ \frac{\mu e^{\star}(n)x(n)}{x^H(n)x(n)} $$
+
+
+## Noise Removal from Voice Signal
+
+### Matlab Implementation
+---
+
+On matlab we implement LMS and NLMS algorithms.
+
+We take voice signal $(d)$ and we add white gaussian noise so we make a new signal $x$.
+
+$$ x=d + n  $$
+
+After that we use the  filters to remove noise with different $\mu$.
