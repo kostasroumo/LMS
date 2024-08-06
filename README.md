@@ -65,3 +65,9 @@ More detail, we created python code that generates three  sine waves , 2MHz, 30M
   
 -  _tb_lut_example.sv_: Testebench for generating sine waves and applying LMS filter.
 
+### Results
+---
+
+We testing our circuit on vivado and we take the following waves.
+
+
